@@ -1,10 +1,12 @@
 import streamlit as st
 from app_pages.multi_page import MultiPage
 
-from app_pages.calculator import calculator_body
+from app_pages.page_calculator import calculator_body
 
-app = MultiPage(app_name = "Ca;ci;atpr App")
+app = MultiPage(app_name="Calculator App")  # Create an instance of the app
 
-app.add_page("Calculator", calculator_body)
+
+# Add your app pages here using .add_page()
+app.app_page("Calculator", calculator_body)
 
 app.run()
